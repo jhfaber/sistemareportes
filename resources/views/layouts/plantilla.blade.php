@@ -38,11 +38,11 @@ http://www.templatemo.com/tm-398-nature
 
             <div class="menu visible-md visible-lg">
                 <ul id="menu-list">
-                    <li class="active home-menu"><a href="#home">Nosotros</a></li>
+                    <li class="active home-menu"><a href="#home">Reportes</a></li>
                     <li class="about-menu"><a href="#about">Acerca de nosotros</a></li>
                     <li class="services-menu"><a href="#services">Nuestros servicios</a></li>
                     <li class="testimonial-menu"><a href="#testimonial">Testimonios</a></li>
-                    <li class="contact-menu"><a href="#contact">Reportar basuras</a></li>
+                    <li class="contact-menu"><a href="#contact">Generar reporte</a></li>
                     <li><a rel="nofollow" target="_parent" href="https://github.com/jhfaber" class="external">FB Page</a></li>
                 </ul>
             </div><!-- /.menu -->
@@ -63,26 +63,23 @@ http://www.templatemo.com/tm-398-nature
                         
                         <section id="home-text" class="active templatemo-content-section">
                             <div class="col-sm-12 col-md-12 col-lg-12">
+                                @yield('reportes')
+                            </div>
+                        </section><!-- /.home-text -->    
+                        <section id="about-text" class="inactive">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
                                 <h2>¿Que hacemos?</h2>
                                 <p>Es una organización voluntaria de la Unión Europea que reconoce a aquellas organizaciones que han implantado un SGMA (Sistema de Gestión Medioambiental) y han adquirido un compromiso de mejora continua, verificado mediante auditorías independientes. Las organizaciones reconocidas con el EMAS -ya sean compañías industriales, pequeñas y medianas empresas, organizaciones del tercer sector, administraciones y organizaciones internacionales (incluidas la Comisión Europea y el Parlamento Europeo1 )- tienen una política medioambiental definida, hacen uso de un sistema de gestión medioambiental y dan cuenta periódicamente del funcionamiento de dicho sistema a través de una declaración medioambiental verificada por organismos independientes. Estas entidades son reconocidas con el logotipo EMAS, que garantiza la fiabilidad de la información dada por dicha empresa. </p>
                             </div>
-                        </section><!-- /.home-text -->    
+                        </section>
 
-                        <section id="about-text" class="inactive">
-                            <h2 class="text-center">Acerca de nosotros</h2>
-                            <div class="col-sm-6 col-md-6">
-                                <p>El compromiso de la alta dirección (no es lo mismo que la definición de una política medioambiental concreta) es una declaración de intenciones por las cuales se asume la intención de corregir, adecuar y mantener una política organizativa que incorpore el factor medioambiental como parte importante en su estructura.</p>
-                            </div>
-                            <div class="col-sm-6 col-md-6">
-                                <p>Los factores que inducen a la decisión de implantar el EMAS pueden ser variados, como adecuación a la legislación, mejorar la imagen de la organización o introducir un elemento diferenciador que le dé más valor a la organización.</p>
-                            </div>
-                        </section><!-- /.about-text --> 
+                      
 
                         <section id="services-text" class="inactive">
                             <h2 class="text-center">Nuestros servicios</h2>
                             <div class="col-sm-4 col-md-4">
                                 <h3>Marketing</h3>
-                                <p>Un servicio es un conjunto de actividades que buscan satisfacer las necesidades de un cliente. Los servicios incluyen una diversidad de actividades que se pueden planificar desempeñadas por un gran número de personas (funcionarios, empleados, empresarios) que trabajan para el estado (servicios públicos) o para empresas particulares (servicios privados); entre estos pueden señalarse los servicios de: electricidad, agua potable, limpieza, teléfono, telégrafo, correo, transporte, educación, cibercafés, sanidad, asistencia social, etc. </p>
+                                <p>Un servicio es un conjunto de actividades que buscan satisfacer las necesidades de un cliente. Los servicios incluyen una diversidad de actividades que se pueden planificar desempeñadas por un gran número de personas  </p>
                             </div>
                             <div class="col-sm-4 col-md-4">
                                 <h3>Relaciones publicas</h3>
@@ -90,7 +87,7 @@ http://www.templatemo.com/tm-398-nature
                             </div>
                             <div class="col-sm-4 col-md-4">
                                 <h3>Digital Media</h3>
-                                <p> Es el equivalente no material de un bien. Un servicio se diferencia de un bien (físico o intangible) en que el primero se consume y se desgasta de manera brutal puesto que la economía social nada tiene que ver con la política moderna; es muy importante señalar que la economía nacional no existe siempre en el momento en que es prestado.</p>
+                                <p> Es el equivalente no material de un bien. Un servicio se diferencia de un bien (físico o intangible) en que el primero se consume y se desgasta de manera brutal puesto que la economía social nada tiene que ver con la política moderna..</p>
                             </div>
                         </section><!-- /.services-text --> 
 
@@ -103,41 +100,7 @@ http://www.templatemo.com/tm-398-nature
                         </section><!-- /.testimonial-text --> 
 
                         <section id="contact-text" class="inactive">
-                            <div class="col-sm-12 col-md-12">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-12"><h2>Contact</h2></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-6">
-                                        <div id="map-canvas"></div>
-                                        <p>990 Digital Street, New Forest Area, San Francisco, CA 10660</p>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-6">
-                                        <form action="#" method="post">
-
-                                                <div class="form-group">
-                                                    <!--<label for="contact_name">Name:</label>-->
-                                                    <input type="text" id="contact_name" class="form-control" placeholder="Name" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <!--<label for="contact_email">Email:</label>-->
-                                                    <input type="text" id="contact_email" class="form-control" placeholder="Email Address" />
-                                                </div>
-                                                <div class="form-group">
-                                                    <!--<label for="contact_message">Message:</label>-->
-                                                    <textarea id="contact_message" class="form-control" rows="7" placeholder="Write a message"></textarea>
-                                                </div>
-                                                <button type="submit" class="btn btn-primary">Send</button>
-
-                                        </form>
-                                    </div>
-                                    
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
+                            @yield('contenido')
                         </section><!-- /.contact-text --> 
                     </div><!-- /.templatemo-content -->  
                 </div><!-- /.templatemo-content-wrapper --> 

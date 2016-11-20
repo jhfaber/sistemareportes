@@ -84,7 +84,7 @@ var map = '';
 function initialize() {
     var mapOptions = {
       zoom: 14,
-      center: new google.maps.LatLng(37.769725, -122.462154)
+      center: new google.maps.LatLng( 5.07 , -75.5206)
     };
     map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
 }

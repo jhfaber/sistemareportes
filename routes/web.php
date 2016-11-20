@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('reciclaje/home');
-});
+Route::resource('/', 'ReporteController');
+Route::get('reportes', function(){
+	return 'Haga su reporte';
+})->name('routereportes');
 
